@@ -1,0 +1,26 @@
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding:94px 158px ;
+    align-items: center;
+    row-gap: 28px;
+}
+
+.footer__content__text{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+}
+
+.footer__social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer__social__group{
+    display: flex;
+    height: 24px;
+}
