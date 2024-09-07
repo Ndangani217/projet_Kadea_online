@@ -1,0 +1,54 @@
+:root{
+    --color-background-light: #fff;
+    --color-text-dark: #3E3D3D;
+    --color-background-secondary: #FAF3E9;
+    --color-accent-red: #D92950;
+}
+
+/** start style header**/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 159px;
+    align-items: end;
+}
+
+.header__navbar__menu{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.header__navbar__menu__item__link{
+    text-decoration: none;
+    color:var(--color-text-dark);
+    font-weight:700;
+    font-size: 18px;
+}
+
+.header__navbar__menu__item__link--active{
+    color: var(--color-accent-red);
+}
+/*End style header*/
+
+/*taille smartphone */
+
+@media screen and (max-width:468px) {
+    
+    /** start style header**/
+    
+    .header{
+        flex-direction: column;
+        padding: 24px;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .header__navbar__menu{
+        flex-direction: row;
+        gap: 12px;
+    }
+    
+    /*End style header*/
+}    
