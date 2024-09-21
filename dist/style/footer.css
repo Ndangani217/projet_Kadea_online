@@ -36,8 +36,37 @@
 }
 /*End style footer*/
 
-@media screen and (max-width:467px) {
+@media screen and (max-width:480px) {
     /* Start style footer*/
+    .footer{
+        padding:24px;
+        justify-content: center;
+    }
+
+    .footer__content__text{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .footer__social{
+        column-gap: 6px;
+    }
+    
+
+    .footer__social__link__logo{
+        height: 18px;
+        width: 18px;
+    }
+/*End style footer*/
+}
+
+
+
+/*taile moyen ecran tablette */
+@media screen and (min-width:481px) and (max-width:768px) {
+    
+    /** start style header**/
+    
     .footer{
         padding:24px;
         justify-content: center;
@@ -57,5 +86,6 @@
         height: 18px;
         width: 18px;
     }
-/*End style footer*/
-}
+    
+    /*End style header*/
+}    

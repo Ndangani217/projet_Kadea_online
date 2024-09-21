@@ -5,8 +5,11 @@
     --color-accent-red: #D92950;
 
     --padding-section: 80px 160px;
+
+    --padding-section-smart:40px 24px; 
 }
 
+/* Start improve section */
 .main__improve{
     background-color:var(--color-background-secondary);
     padding: var(--padding-section);
@@ -41,12 +44,18 @@
     color:var(--color-text-dark)
 }
 
+/* End hero section */
+
+/* Start toStart section */
+
 .main__toStart{
     padding: var(--padding-section);
     display: flex;
     flex-direction: column;
     row-gap: 36px;
 }
+
+
 
 .main__toStart__title{
     text-align: center;
@@ -99,9 +108,12 @@
     color:var(--color-accent-red);
 }
 
-@media screen and (max-width:467px){
+/* End toStart section */
+
+@media screen and (max-width:480px){
+    /* Start improve section */
     .main__improve{
-        padding: 24px;
+        padding: var(--padding-section-smart);
         flex-direction: column;
         row-gap: 24px;
     }
@@ -121,18 +133,96 @@
     }
     
     .main__improve__content__text{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }
-    
+
+/* end improve section */
+
+/* Start toStart section */
     .main__toStart{
-        padding: 24px;
+        padding: var(--padding-section-smart);
         flex-direction: column;
         row-gap: 24px;
     }
     
     .main__toStart__title{
-        font-size: 20px;
+        font-size: 24px;
+    }
+    
+    .main__toStart__text{
+        font-size: 14px;
+        line-height: 24px
+    }
+    
+    .main__toStart__items{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+    
+    .main__toStart__items__article{
+        width: 325px;
+        height: 120px;
+    }
+    
+    .main__toStart__items__article__title{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .main__toStart__btns{
+        column-gap: 12px;
+    }
+    .main__toStart__btns__link{
+        font-size: 14px;
+    }
+
+    /* End toStart section */
+}
+
+
+
+/*taile moyen ecran tablette */
+@media screen and (min-width:481px) and (max-width:768px){
+
+     /* Start improve section */
+     .main__improve{
+        padding: var(--padding-section-smart);
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    
+    .main__improve__img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .main__improve__content{
+        row-gap: 24px;
+    }
+    
+    .main__improve__content__title{
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .main__improve__content__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+/* end improve section */
+
+/* Start toStart section */
+    .main__toStart{
+        padding: var(--padding-section-smart);
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    
+    .main__toStart__title{
+        font-size: 24px;
     }
     
     .main__toStart__text{
@@ -141,9 +231,9 @@
     }
     
     .main__toStart__items{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        row-gap: 24px;
+        column-gap: 12px;
     }
     
     .main__toStart__items__article{
@@ -162,4 +252,6 @@
     .main__toStart__btns__link{
         font-size: 16px;
     }
+
+    /* End toStart section */
 }
